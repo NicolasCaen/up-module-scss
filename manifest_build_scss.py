@@ -265,10 +265,7 @@ def build_entry(base_dir: Path, path: Path, seen_slugs: Dict[str, Path]) -> Opti
         return None
     seen_slugs[slug] = path
 
-    if "name" in fields and fields.get("name"):
-        name = fields.get("name")
-    else:
-        name = path.name
+    name = path.name
     description = fields.get("description") or f"Module {name}"
     version = fields.get("version") or "1.0.0"
     categories = to_categories(fields.get("categories"))

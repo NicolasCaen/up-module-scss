@@ -2,7 +2,7 @@
   "patterns": [
     {
       "slug": "scss-editor-overrides",
-      "name": "SCSS Editor Overrides",
+      "name": "editor.scss",
       "description": "Ajustements SCSS pour l’éditeur (reset marges des template-part et blocs).",
       "version": "1.0.0",
       "categories": [
@@ -18,7 +18,7 @@
     },
     {
       "slug": "scss-form-grid",
-      "name": "SCSS Form Grid",
+      "name": "_form.scss",
       "description": "Mise en forme des formulaires de contact en grille responsive (styles inputs, checkbox).",
       "version": "1.0.0",
       "categories": [
@@ -34,7 +34,7 @@
     },
     {
       "slug": "scss-mixins-utils",
-      "name": "SCSS Mixins Utils",
+      "name": "_mixins.scss",
       "description": "Fonctions et mixins utilitaires pour gérer les breakpoints, px et rem.",
       "version": "1.0.0",
       "categories": [
@@ -50,7 +50,7 @@
     },
     {
       "slug": "scss-theme-style",
-      "name": "SCSS Theme Style",
+      "name": "style.scss",
       "description": "Feuille SCSS principale du thème ng1-base (imports mixins et formulaires).",
       "version": "1.0.0",
       "categories": [
