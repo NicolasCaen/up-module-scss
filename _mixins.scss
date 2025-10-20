@@ -1,0 +1,32 @@
+// Slug: scss-mixins-utils
+// Nom: SCSS Mixins Utils
+// Description: Fonctions et mixins utilitaires pour gérer les breakpoints, px et rem.
+// Version: 1.0.0
+// Catégories: SCSS, Utilitaires
+// Type: style
+// Install: style=assets/scss/mixins
+
+@function px($target-px) {
+    @return ($target-px * 1px);
+}
+
+@function PxToRem($size) {
+  $remSize: $size / 16;
+  @return ($remSize * 1rem);
+}
+
+@mixin b($min,$max){
+  @media (min-width: px($min)) and (max-width:  px($max)) {
+    @content;
+  }
+}
+@mixin m($min){
+  @media (max-width: px($min)){
+    @content;
+  }
+}
+@mixin p($max){
+  @media (min-width:  px($max)){
+    @content;
+  }
+}

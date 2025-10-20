@@ -1,0 +1,13 @@
+// Slug: scss-editor-overrides
+// Nom: SCSS Editor Overrides
+// Description: Ajustements SCSS pour l’éditeur (reset marges des template-part et blocs).
+// Version: 1.0.0
+// Catégories: SCSS, Éditeur
+// Type: style
+// Install: style=assets/scss/editor
+
+.editor-styles-wrapper .wp-block-template-part,
+.editor-styles-wrapper :where(.wp-site-blocks) > * {
+  margin-block-start: 0 !important;
+  margin-block-end: 0 !important;
+}

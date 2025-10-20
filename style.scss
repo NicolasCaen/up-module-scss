@@ -1,0 +1,32 @@
+// Slug: scss-theme-style
+// Nom: SCSS Theme Style
+// Description: Feuille SCSS principale du thème ng1-base (imports mixins et formulaires).
+// Version: 1.0.0
+// Catégories: SCSS, Thème
+// Type: style
+// Install: style=assets/scss
+// Files: map=assets/scss/_form.scss|mixins=assets/scss/_mixins.scss
+
+/*
+Theme Name: ng1-base
+Theme URI:
+Author: GEHIN NIcolas
+Author URI:
+Description: Thème ng1@base
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ng1-base
+*/
+
+@import 'mixins';
+@import 'form';
+
+
+.nowrap{
+    white-space: nowrap;
+}
+:where(.wp-site-blocks) > * {
+    margin-block-start: 0 !important;
+    margin-block-end: 0 !important;
+}

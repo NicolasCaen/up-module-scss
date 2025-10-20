@@ -1,0 +1,72 @@
+{
+  "patterns": [
+    {
+      "slug": "scss-editor-overrides",
+      "name": "SCSS Editor Overrides",
+      "description": "Ajustements SCSS pour l’éditeur (reset marges des template-part et blocs).",
+      "version": "1.0.0",
+      "categories": [
+        "SCSS",
+        "Éditeur"
+      ],
+      "files": {
+        "style": "editor.scss"
+      },
+      "install": {
+        "style": "assets/scss/editor"
+      }
+    },
+    {
+      "slug": "scss-form-grid",
+      "name": "SCSS Form Grid",
+      "description": "Mise en forme des formulaires de contact en grille responsive (styles inputs, checkbox).",
+      "version": "1.0.0",
+      "categories": [
+        "SCSS",
+        "Formulaire"
+      ],
+      "files": {
+        "style": "_form.scss"
+      },
+      "install": {
+        "style": "assets/scss/forms"
+      }
+    },
+    {
+      "slug": "scss-mixins-utils",
+      "name": "SCSS Mixins Utils",
+      "description": "Fonctions et mixins utilitaires pour gérer les breakpoints, px et rem.",
+      "version": "1.0.0",
+      "categories": [
+        "SCSS",
+        "Utilitaires"
+      ],
+      "files": {
+        "style": "_mixins.scss"
+      },
+      "install": {
+        "style": "assets/scss/mixins"
+      }
+    },
+    {
+      "slug": "scss-theme-style",
+      "name": "SCSS Theme Style",
+      "description": "Feuille SCSS principale du thème ng1-base (imports mixins et formulaires).",
+      "version": "1.0.0",
+      "categories": [
+        "SCSS",
+        "Thème"
+      ],
+      "files": {
+        "style": "style.scss",
+        "map": "assets/scss/_form.scss",
+        "mixins": "assets/scss/_mixins.scss"
+      },
+      "install": {
+        "style": "assets/scss",
+        "map": "functions/assets/scss",
+        "mixins": "functions/assets/scss"
+      }
+    }
+  ]
+}
